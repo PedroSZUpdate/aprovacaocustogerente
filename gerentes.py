@@ -1,13 +1,12 @@
 import tkinter as tk
 import aux_custom_classes
-from update import update_app
+from update import create_interface
 from screen_gerentes import ScreenGerente
 from screen_gerentes_mov_saldo import ScreenSaldo
 
 
 class App(tk.Tk):
-    update_app()
-    
+
     def __init__(self, screen_name="Aprovação e Liberação de Ordens"):
         super().__init__()
         # self.title("My Tkinter App")
@@ -43,5 +42,6 @@ class App(tk.Tk):
         app.mainloop()
 
 
+create_interface()
 app = App()
 app.mainloop()
